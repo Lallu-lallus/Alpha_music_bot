@@ -50,8 +50,8 @@ async function download(url, options = {}) {
 				'-analyzeduration', '0',
 				'-loglevel', '0',
 				'-f', 's16le',
-				'-ar', '48000',
-				'-ac', '2',
+				'-ar', '65000',
+				'-ac', '1',
 			],
 			shell: false,
 		});
