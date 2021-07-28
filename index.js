@@ -67,12 +67,7 @@ async function download(url, options = {}) {
       ],
       shell: false,
     });
-    const opus = new prism.opus.Encoder({
-      rate: 65000,
-      channels: 1,
-      frameSize: 960,
-    });
-    return pipeline([transcoder, opus], noop);
+    return pipeline([transcoder], noop);
   }
 }
 
