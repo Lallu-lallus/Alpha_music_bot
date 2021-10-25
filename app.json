@@ -1,26 +1,42 @@
 {
-    "name" : "Music downloader bot",
-    "description" : "A telegram bot that can send you high-quality audio ",
-    "repository" : "https://github.com/anishgowda21/Music-downloader-bot",
-    "keywords" : ["music" , "telegram" , "telegram bot", "python","jiosaavn"],
-    "env" : {
-        "BOT_TOKEN" : {
-            "description" : "Enter your telegram bot token",
-            "value" : ""
+    "name": "Alpha music bot",
+    "logo": "https://telegra.ph/file/cb7b0aead06c96955323e.jpg",
+    "description": "Grabs song from yt and sends it to telegram by @TamilBots",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org.",
+            "required": true
         },
-        "APP_NAME" : {
-            "description" : "Enter your heroku app name",
-            "value" : ""
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org.",
+            "required": true
         },
-        "API_APP_URL" :{
-            "description" : "Enter your api url note please include '/' at the end",
-            "value" : ""
+        "BOT_TOKEN": {
+            "description": "Get this value by making a bot from @BotFather.",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Your telegram user id.",
+            "required": true
         }
     },
-    "buildpacks": [{
-        "url" : "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },{
-        "url" : "heroku/python"
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {
+                "version": "12"
+            }
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-]
 }
