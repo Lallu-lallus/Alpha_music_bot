@@ -1,7 +1,7 @@
 # ALPHA_MUSIC_BOT
 
-Very Sempil Bot Auto Filter bot
-##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Alpha-Auto-Filter-Bot!;created+by+Alpha+Admin+Lallu+Lallus!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
+Very Sempil music downloader bot
+##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Alpha-music-downloader-Bot!;created+by+Alpha+Admin+Lallu+Lallus!;A+simple+music+Bot!;yt+music+Downloader+bot!;start+message+with+pic!;and+all+futures!)
 </p>
 <img src="https://telegra.ph/file/080538bf9bad4e0d208ca.jpg" alt="JPG" width="300" height="250"/>
 </p>
